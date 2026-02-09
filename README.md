@@ -20,7 +20,9 @@ IMPORTANT:
 - Commands must be run on the HOST OS
 - Do NOT run inside Flatpak shells (RustDesk Flatpak, etc.)
 - If you are inside a Flatpak shell, escape to host with:
+```bash
   flatpak-spawn --host bash
+```
 
 0) Clone repository and set permissions
 ```bash
@@ -161,8 +163,3 @@ zram still active:
 
 Display cropped:
 - TV overscan still enabled
-```bash
-git clone https://github.com/DwarfNinjaV/bc250-bazzite-baseline.git
-cd bc250-bazzite-baseline
-chmod +x scripts/*.sh scripts/helpers/*.sh
-```
