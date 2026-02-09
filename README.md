@@ -22,8 +22,6 @@ IMPORTANT:
 - If you are inside a Flatpak shell, escape to host with:
   flatpak-spawn --host bash
 
-
-
 0) Clone repository and set permissions
 ```bash
 cd Documents
