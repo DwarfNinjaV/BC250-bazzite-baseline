@@ -25,33 +25,6 @@ IMPORTANT:
 INSTALL – COMPLETE END TO END (FOLLOW IN ORDER)
 
 0) Clone repository and set permissions
-# BC-250 + Bazzite Baseline (No Hardware Tweaks)
-
-Goal:
-- Stable, reproducible baseline for BC-250 on Bazzite for TV gaming (tested with Sims 4)
-- No overclocking
-- No mitigations=off
-- No governor stacks (Oberon / Skillfish not required)
-- Idempotent scripts (safe to re-run)
-- Stability > benchmarks
-
-What this baseline does:
-- Forces CEA 1080p60 output for TVs (avoids EDID / VESA issues)
-- Disables zram so memory behavior is predictable
-- Enables zswap (lz4) for controlled memory pressure handling
-- Creates a 32 GB Btrfs swapfile at /var/swap/swapfile
-- Locks AMD GPU DPM performance level to "high" (prevents clock-down stutter)
-- Provides Gamescope launch helpers for Steam and Lutris
-
-IMPORTANT:
-- Commands must be run on the HOST OS
-- Do NOT run inside Flatpak shells (RustDesk Flatpak, etc.)
-- If you are inside a Flatpak shell, escape to host with:
-  flatpak-spawn --host bash
-
-INSTALL – COMPLETE END TO END (FOLLOW IN ORDER)
-
-0) Clone repository and set permissions
 ```bash
 cd Documents
 git clone https://github.com/DwarfNinjaV/bc250-bazzite-baseline.git
