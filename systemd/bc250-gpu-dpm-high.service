@@ -1,0 +1,10 @@
+[Unit]
+Description=BC-250 GPU DPM performance level lock (high)
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/bc250-gpu-dpm-high.sh
+
+[Install]
+WantedBy=multi-user.target
