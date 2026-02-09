@@ -22,6 +22,6 @@ This repo applies a stable, reproducible baseline for BC-250 gaming on Bazzite:
 
 ### 1) Clone
 ```bash
-git clone https://github.com/<you>/bc250-bazzite-baseline.git
+git clone https://github.com/DwarfNinjaV/bc250-bazzite-baseline.git
 cd bc250-bazzite-baseline
 chmod +x scripts/*.sh scripts/helpers/*.sh
